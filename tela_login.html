@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Site Refugiada</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <header>
+          <img style="cursor: pointer" onclick="inicio()" src="logoprojeto.PNG" alt="Logo site">
+          <nav>
+              <ul>
+                  <li class="li12" onclick="inicio()"><a href="#"><b>Cadastrar</b></a></li>
+                  <li class="li3"><a href="#"><b>Faça doação</b></a></li>
+              </ul>
+          </nav>
+           <div class="container">
+    <input type="checkbox" id="checkbox-menu">
+    <label for="checkbox-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </header>
+
+  <div class="tela-login">
+    <h1 class="login-text">Login</h1>
+    <hr>
+    <input class="login-input"type="email" id="email"placeholder="email"
+  onchange="validateFields()">
+    <br><br>
+    <input class="login-input"type="password" placeholder="Senha">
+    <br><br>
+    <button class="login-button" onclick="logar(); return false">Fazer login</button>
+    <hr class="login-h2">
+    
+    <p class="login-text">Ou</p>
+    <button onclick="inicio()" class="login-button">Cadastre-se</button>
+  </div>
+<script src="script.js"></script>
+</body>

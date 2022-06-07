@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Site Refugiada</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <header>
+          <img style="cursor: pointer" onclick="inicio()" src="logoprojeto.PNG" alt="Logo site">
+          <nav>
+              <ul>
+                  <li class="li12" onclick="logar()"><a href="#"><b>Logar</b></a></li>
+                  <li class="li3"><a href="#"><b>Faça doação</b></a></li>
+              </ul>
+          </nav>
+           <div class="container">
+    <input type="checkbox" id="checkbox-menu">
+    <label for="checkbox-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+      </header>
+
+  <div class="tela-refu">
+    <h1 class="refu-text">Cadastro</h1>
+    <p style="text-align: center; margin: 5px;">Refugiada</p>
+    <hr>
+    <p style="margin-left: 10px;">Seu Email</p>
+    <input class="refu-input"type="email" placeholder="Email">
+    <p style="margin-left: 10px">Sua Senha</p>
+    <input class="refu-input"type="password" placeholder="Senha">
+    <p style="margin-left: 10px">Seu Nome</p>
+    <input class="refu-input"type="text" placeholder="Seu nome">
+    <p style="margin-left: 10px">Data de Nascimento</p>
+    <input class="refu-input"type="date" placeholder="Data de nascimento">
+    <p style="margin-left: 10px">N° Validação da ONU</p>
+    <input class="refu-input"type="number" placeholder="N°Validação">
+    <button class="login-button" onclick="alert('Fim do prototipo')">Fazer Cadastro</button>
+    <hr class="login-h2">
+<script src="script.js"></script>
+</body>

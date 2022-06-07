@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   font-family: 'Dosis', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/*header*/
+header{
+    background-color: #0E3554;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+header img {
+    width: 70px;
+    margin-top: 5px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    text-align: center;
+}
+
+header ul li + li {
+    margin-left: 24px;
+}
+
+.li12{
+  padding: 10px;
+}
+
+.li3 {
+  border-radius: 25px;
+  background: #4D7AA1;
+  padding: 10px;
+  width: 200px; 
+  height: 40px; 
+  text-align: center;
+}
+
+header a {
+    color: #ebebeb;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+header a:hover {
+    color: #139FC2;
+}
+
+.container{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#checkbox-menu{
+  position: absolute;
+  opacity: 0;
+}
+
+label{
+  cursor: pointer;
+  position: relative;
+  display: block;
+  height: 22px;
+  width: 30px;
+}
+
+label span{
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 100%;
+  border-radius: 30px;
+  background: #ffffff;
+}
+
+label span:nth-child(1){
+  top: 0;
+}
+
+label span:nth-child(2){
+  top: 8px;
+}
+
+label span:nth-child(3){
+  top: 16px;
+}
+
+/*imagem de fundo*/
+
+.imagerefu {
+    height: 320px;
+    padding: 24px;
+
+    background-image: url(acolhimentorefu.jpg);
+    background-size: cover;
+    background-position: center top 25%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.imagerefu:hover {
+  background-image: url(acolhimentorefu2.jpg);
+  transition-duration: 1s
+}
+    
+.dots {
+    margin-top: 24px;
+    display: flex;
+}
+
+.dots span {
+    display: block;
+    background-color: #FFFFFF;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.dots span + span {
+    margin-left: 16px;
+}
+
+.dots .active {
+    background-color: #139FC2;
+}
+    
+.linha {
+  color: #139FC2;
+  display: block;
+  margin: 50px
+}
+
+.Block1{
+  font-size: 50px;
+  color: #ffffff;
+  border-radius: 10px;
+  background: #139FC2;
+  align-items: center;
+  width: 387px; 
+  height: 125px; 
+  display: flex;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+h1{
+  font-family: 'Dosis', sans-serif;
+  font-weight: 800;
+}
+
+
+p {
+  font-family: 'Roboto Slab', serif; 
+  color: #2F4556; 
+}
+
+.textp1 {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 50px
+}
+
+h2 {
+  color: #139FC2;
+  margin: 50px;
+  display: block;
+  text-align: center;
+}
+
+.Block2{
+  font-size: 30px;
+  color: #ffffff;
+  border-radius: 10px;
+  background: #139FC2;
+  align-items: center;
+  text-align: center;
+  width: 185px; 
+  height: 100px; 
+  display: flex;
+  margin: auto;
+  position: relative;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.button {
+  background-color: #E6306D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 20%;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin: auto;
+}
+
+.but{
+  background-color: white; 
+  color: black; 
+  margin-left: 50px;
+  border: 2px solid #E6306D;
+}
+
+.but:hover {
+  background-color: #E6306D;
+  color: white;
+}
+
+.di1 {
+  align-items: center;
+  text-align: center;
+}
+
+/* tela login */ 
+
+.tela-login {
+  border: 1px solid #0E3554;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 30px;
+  border-radius: 15px;
+  margin: auto;
+}
+
+.login-text {
+  text-align: center;
+  margin: 20px;
+}
+
+.login-input {
+  margin: 10px;
+  padding: 15px;
+  outline: none;
+  font-size: 15px;
+  border-radius: 50px;
+}
+
+.login-button {
+  background-color: #139FC2;
+  border: none;
+  padding: 15px;
+  width: 100%;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.login-button:hover {
+  background-color: #E6306D;
+}
+
+.login-h2 {
+  margin: 20px;
+  color: #0E3554;
+}
+
+/* Cadastro Refugiada */
+
+.tela-refu {
+  border: 1px solid #0E3554;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 30px;
+  border-radius: 15px;
+}
+
+input{
+  padding: 4px;
+  margin: 5px;
+  border: solid 1px gray;
+  font-family: 'Roboto',sans-serif;
+  border-radius: 15px;
+}
+.refu-text {
+  text-align: center;
+  margin: 20px;
+}
+
+.login-button {
+  background-color: #139FC2;
+  border: none;
+  padding: 15px;
+  width: 100%;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.login-button:hover {
+  background-color: #E6306D;
+}
