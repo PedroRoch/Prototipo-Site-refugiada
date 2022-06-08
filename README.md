@@ -14,3 +14,5 @@ Prototipo feito por de um modelo feito no Figma.
 https://pedroroch.github.io/Prototipo-Site-refugiada/
 
 Link do site postado no GitHub
+
+O JavaScript do site serve para mudar as abas quando clica em botões especificos 
